@@ -1,0 +1,237 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+.logo,
+.lang {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 1.2em;
+}
+
+.logo {
+    color: black;
+    font-family: "Cinzel";
+}
+
+.lang {
+    right: 0;
+    font-family: Arial;
+    color: #646464;
+}
+.container-left {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.container-right {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    background: url(https://cdn.pixabay.com/photo/2023/03/03/21/38/bookcover-7828501_960_720.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+    animation: animatedBackground1 8s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 6s;
+}
+
+@keyframes animatedBackground1 {
+    from {
+        background-size: 460%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+.container-left-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   width: 300px;
+    height: 400px;
+    background: url(https://cdn.pixabay.com/photo/2023/03/03/21/27/night-7828486_960_720.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+    animation: animatedBackground2 8s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 6s;
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-size: 760%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+.left-img-cap {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: red;
+    line-height: 24px;
+}
+
+.left-img-cap span {
+    font-style: italic;
+}
+
+.left-img-btn {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    background: #8f8776;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 2em;
+}
+
+.social-media ul li {
+    padding: 10px 0;
+}
+
+.social-media ul li a {
+    color: #8f8776;
+}
+
+.left-bottom-text {
+    position: absolute;
+    color: grey;
+    font-size: 48px;
+    font-family: "Cinzel";
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+}
+
+.right-upper-text {
+    backdrop-filter: blur(18px);
+    position: absolute;
+    color: gray;
+    font-size: 38px;
+    font-family: "Arial";
+    font-weight: lighter;
+    padding: 18px;
+    opacity: 0;
+    animation: blinker 5s linear infinite;
+    animation-delay: 10s;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 1;
+    }
+}
+
+.right-upper-text span {
+    font-style: italic;
+}
+
+.right-bottom-text {
+    position: absolute;
+    backdrop-filter: blur(15px); 
+    border-radius: 25px;
+    background-color: rgba(233, 227, 227, 0.3);
+    color: black;
+    font-size: 48px;
+    font-family: "Arial";
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 15px;
+    bottom: 4px;
+}
+
+@media (max-width: 990px) {
+    .container-left,
+    .container-right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-right {
+        top: 100vh;
+        left: 0;
+    }
+
+    .left-img-btn,
+    .social-media {
+        display: none;
+    }
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #F9F6EE;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.loader marquee {
+    opacity: 0.2;
+    text-transform: uppercase;
+    line-height: 180px;
+    margin: 0;
+    padding: 0;
+    color: #646464;
+    font-size: 200px;
+    font-family: "Cinzel";
+}
+
+.loader .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader .intro h1 {
+    font-size: 124px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: black;
+    font-family: "Cinzel";
+}
+
+.intro-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
