@@ -22,14 +22,18 @@ body {
     font-size: 20px;
     margin: 1.2em;
 }
+
+.logo {
+    color: black;
+    font-family: "Cinzel";
+    align-items: center;
+    text-align: center;
+}
+
 .lang {
     right: 0;
     font-family: Arial;
     color: #646464;
-}
-.logo {
-    color: black;
-    font-family: "Cinzel";
 }
 .container-left {
     position: absolute;
@@ -45,16 +49,17 @@ button {
     width: 100%;
     padding: 10px;
   }
-
+@media only screen and (min-width: 768px) {
 .container-right {
     position: absolute;
     width: 50%;
-    height: 400px;
+    height: 100vh;
     left: 50%;
-    background: url(https://cdn.pixabay.com/photo/2023/03/03/21/38/bookcover-7828501_960_720.jpg) no-repeat 50% 50%;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee3e5625-5178-4ee9-8858-0c1c8e52ccde/dbhpaw3-351a6cfb-fee2-49d7-b001-590cfb32279f.jpg/v1/fill/w_1024,h_1942,q_75,strp/4k_wallpaper_for_iphone_android__portrait__by_xxstryverxx_dbhpaw3-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTk0MiIsInBhdGgiOiJcL2ZcL2VlM2U1NjI1LTUxNzgtNGVlOS04ODU4LTBjMWM4ZTUyY2NkZVwvZGJocGF3My0zNTFhNmNmYi1mZWUyLTQ5ZDctYjAwMS01OTBjZmIzMjI3OWYuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ._Zjz480qVEQU_Rti95Ytynz2BVl-prMB8S7Svnfc-Ew) no-repeat 50% 50%;
     background-size: 100%;
     animation: animatedBackground1 8s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 6s;
+}
 }
 
 @keyframes animatedBackground1 {
@@ -147,6 +152,7 @@ button {
     font-size: 48px;
     font-family: "Cinzel";
     text-transform: uppercase;
+    font-weight: 400;
     padding: 15px;
     bottom: 0;
     right: 0;
@@ -181,6 +187,7 @@ button {
     font-size: 48px;
     font-family: "Arial";
     text-transform: uppercase;
+    font-weight: lighter;
     padding: 15px;
     bottom: 0;
 }
@@ -255,3 +262,24 @@ font-family: "Cinzel";
     line-height: 1em;
 }
 
+.bottom-nav {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(18px);
+}
+
+           /* Style for the nav links */
+           .bottom-nav a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+            }
