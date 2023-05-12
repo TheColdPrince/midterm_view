@@ -223,15 +223,27 @@ body {
     text-align: center;
 }
 
-.loader .intro h1 {
-    font-size: 124px;
+@media only screen and (max-width: 767px) {
+    .loader .intro h1 {
+    font-size: 34px;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 50;
     color: black;
     font-family: "Cinzel";
+    }
+    }
+@media only screen and (min-width: 768px) {
+.loader .intro h1 {
+font-size: 124px;
+text-transform: uppercase;
+font-weight: 200;
+color: black;
+font-family: "Cinzel";
 }
+}     
 
 .intro-title .letter {
     display: inline-block;
     line-height: 1em;
 }
+
