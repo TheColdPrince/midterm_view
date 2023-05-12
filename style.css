@@ -39,6 +39,15 @@ body {
     height: 100vh;
 }
 
+button {
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    width: 100%;
+    padding: 10px;
+  }
+
 .container-right {
     position: absolute;
     width: 50%;
@@ -141,7 +150,7 @@ body {
     font-family: "Cinzel";
     text-transform: uppercase;
     font-weight: 400;
-    padding: 20px;
+    padding: 15px;
     bottom: 0;
     right: 0;
 }
@@ -171,16 +180,13 @@ body {
 
 .right-bottom-text {
     position: absolute;
-    backdrop-filter: blur(15px); 
-    border-radius: 25px;
-    background-color: rgba(233, 227, 227, 0.3);
     color: black;
     font-size: 48px;
     font-family: "Arial";
     text-transform: uppercase;
     font-weight: lighter;
     padding: 15px;
-    bottom: 4px;
+    bottom: 0;
 }
 
 @media (max-width: 990px) {
