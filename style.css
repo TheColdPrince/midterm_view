@@ -135,7 +135,6 @@ button {
     font-size: 48px;
     font-family: "Cinzel";
     text-transform: uppercase;
-    font-weight: 400;
     padding: 15px;
     bottom: 0;
     right: 0;
@@ -170,7 +169,6 @@ button {
     font-size: 48px;
     font-family: "Arial";
     text-transform: uppercase;
-    font-weight: lighter;
     padding: 15px;
     bottom: 0;
 }
